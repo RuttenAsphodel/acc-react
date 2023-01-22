@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 70%;
+}
+
+.banner-race
+{
+    background-image: url("../images/P_GT3_1.jpg");
+    background-size: cover;
+    padding: 90px;
+    font-size: 80%;
+    color:lightgray;
+    text-align: center;
+    border-top: 10px solid orange;
+    border-bottom: 10px solid orange;
+}
+
+.pruebas
+{
+    display:grid;
+    background-color: white;
+    grid-template-columns: repeat(5,1fr);
+    gap:5px;
+    justify-content:start;
+    align-content: space-between;
+    padding: 20px;
+}
+
+.prueba
+{
+    background-color: white;
+    border: 1px solid gray;
+    color:black;
+    padding: 5px;
+}
+
+
+.prueba img
+{
+    height: 200px;
+    width: 100%;
+}
+
+.pruebas table
+{
+    table-layout: fixed;
+    width: 100%;
+}
+
+.pruebas td
+{
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+
+.link
+{
+    padding: 30px;
+    text-align: center;
+}
+
+.link a
+{
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
+    background-color: orange;
+    color:white;
+}
+
+@media screen and (max-width:768px) {
+
+.pruebas
+    {
+        display:flex;
+        background-color: white;
+        flex-direction: column;
+        justify-content:start;
+        align-content: space-between;
+        padding: 20px;
+    }
+}
